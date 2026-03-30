@@ -527,7 +527,7 @@ jobs:
     needs: update-k8s-manifest
     if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     env:
-      AWS_REGION: ap-south-1
+      AWS_REGION: us-east-1
       EKS_CLUSTER_NAME: my-cluster
       K8S_NAMESPACE: project
 
